@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/98546467-7ab0-42fe-84d4-8b3860f3fdb8/deploy-status)](https://app.netlify.com/sites/tmdb-ui/deploys)
+
 # TMDB UI
 
 Web system that allows searching for films, series or artists from the public API TMDB.
