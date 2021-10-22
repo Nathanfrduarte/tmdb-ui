@@ -1,4 +1,4 @@
-# Frontend Test
+# TMDB UI
 
 Web system that allows searching for films, series or artists from the public API TMDB.
 
