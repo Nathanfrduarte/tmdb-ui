@@ -30,7 +30,7 @@ function MainScreen(props: RouteComponentProps) {
     const [series, setSeries] = useState<ISerieList[]>()
     const [persons, setPersons] = useState<IPersonList[]>()
 
-    useEffect(formatData, [responseData])
+    useEffect(formatData, [responseData, searchType])
 
     /*
      * Lida com a ação de busca
@@ -42,12 +42,12 @@ function MainScreen(props: RouteComponentProps) {
         if (!searchType) return
 
         // Chamada da API
-        const responseData: IResponse = await Requests.searchData(searchType, searchString)
+        const response: IResponse = await Requests.searchData(searchType, searchString)
 
         // Define os resultados para da busca realizada
-        if (responseData.total_results > 0) {
+        if (response.total_results > 0) {
             setHasSearchResult(true)
-            setResponseData(responseData)
+            setResponseData(response)
         }
     }
 
