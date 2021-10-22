@@ -1,6 +1,5 @@
 # Frontend Test
 
-Practical technical test of Frontend.\
 Web system that allows searching for films, series or artists from the public API TMDB.
 
 ## Available Scripts
